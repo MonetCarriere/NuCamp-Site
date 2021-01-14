@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+      <style>
+          .container{
+            border: solid blue;
+          } 
+          .row{
+              border: solid yellow;
+          }
+          .row div {
+            border: solid limegreen;
+          }
+      </style>
+      
+    <title>Bootstrap Grid Example</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+            <div class="col">7</div>
+            <div class="col">8</div>
+            <div class="col">9</div>
+            <div class="col">10</div>
+            <div class="col">11</div>
+            <div class="col">12</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+        </div>
+        <div class="row">
+            <div class="col-4">1</div>
+            <div class="col-8">2</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col-6">2</div>
+            <div class="col">3</div>
+        </div>
+        <div class="row">
+            <div class="col-1">1</div>
+            <div class="col-2">2</div>
+            <div class="col-4">4</div>
+            <div class="col-5">5</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col col-md-6">2</div>  <!-- basically what this col-md-6 is saying is that on medium and up devices it's going to span 6 columns and when it gets to be on a small device it will default to it's default span-->
+            <div class="col">3</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col col-md-6 col-lg-8">2</div>  <!-- basically what this col-md-6 is saying is that on medium and up devices it's going to span 6 columns and when it gets to be on a small device it will default to it's default span-->
+            <div class="col">3</div>
+        </div>
+    </div>
+
+    
+
+
+      <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
